@@ -7,29 +7,45 @@
     }
     
     .stack div{
-        display: inline-block;
-        height: 100px;
-        width: 100px;
-        margin-left: 50px;
-        margin-top: 50px;
-        background-color: black;
+        background-color: #cccccc;
     }
     
     .stack {
+        background-color: #555555;
+        margin: 10px;
+        width: 600px;
+        height: 130px;
+    }
+
+    #upper div{
         display: inline-block;
-        margin: 0;
-        width: 350px;
-        height: 200px;
+        vertical-align: middle;
+        height:118px;
+        width: 192px;
+        margin-top: 6px;
+        margin-left: 6px;
+
+    }
+  
+    #middle div{
+        display: inline-block;
+        width: 142.5px;
+        vertical-align: top;
+        margin-left: 6px;
+        margin-top: 6px;
     }
 
-    #upper{
-        background-color: red;
+    #bottom div{
+        display: inline-block;
+        width: 291px;
+        vertical-align: bottom; 
+        margin-left: 6px;
+        margin-top: 6px;
     }
 
-    #lower{
-        background-color: blue;
-    }
+    #bottom{
 
+    }
 /*    #black{
         background-color: black;
     }
@@ -41,9 +57,7 @@
     #gold{
         background-color: #ffd700;
     }*/
-    div{
-        margin:0;
-    }
+   
     body{
         margin: 0px;
     }
@@ -51,7 +65,15 @@
 </head>
 <body>
     <!-- THIS IS FUCKING RIDICULOUS -->
-    <div class="stack" id= "upper"><div></div><div></div></div><div class="stack" id= "lower"><div></div><div></div></div>  
-
+    <div class="stack" id="upper">
+        <div></div><div></div><div></div>
+    </div>
+    <div class="stack" id="middle">
+        <div style="height:100px;"></div><div style="height:75px;"></div><div style="height:100px;"></div><div style= "height:75px;"></div>
+    </div>
+    <div class="stack" id="bottom">
+        <div style="height:35px;"></div><div style="height:75px;"></div>
+    </div>
+    
 </body>
 </html>
